@@ -11,9 +11,11 @@ package week3;
  */
 public class Address {
     private String emailAddress;
+    private String city;
     
-    public Address(String emailAddress){
+    public Address(String emailAddress, String city){
         this.emailAddress = emailAddress;
+        this.city = city;
     }
 
     public String getEmailAddress() {
@@ -22,6 +24,19 @@ public class Address {
 
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return emailAddress + " " + city;
     }
     
     

@@ -25,8 +25,8 @@ public class Tester {
     public static void main(String[] args) {
         Date date = new Date();
         
-        Address addr1 = new Address("j.m.bass@rgu.ac.uk");
-        Address addr2 = new Address("m.zarb@rgu.ac.uk");
+        Address addr1 = new Address("j.m.bass@rgu.ac.uk", "Aberdeen");
+        Address addr2 = new Address("m.zarb@rgu.ac.uk", "Aberdeen");
         
         Customer customer = new Customer(200, "Julian", "Bass", addr1);
         System.out.println(customer);
