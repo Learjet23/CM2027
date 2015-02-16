@@ -15,18 +15,11 @@ package week3;
  */
 public class Customer extends Person {
     private int customerID;
-    private int areaID;
 
     public Customer(int customerID, String firstName, String lastName) {
         super(firstName, lastName);
         
         this.customerID = customerID;
-    }
-    
-    public Customer(int areaID, String firstName, String lastName) {
-        super(firstName, lastName);
-        
-        this.areaID = areaID;
     }
 
     public int getCustomerID() {
