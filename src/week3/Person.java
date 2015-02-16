@@ -15,12 +15,14 @@ package week3;
  * @author 1303677
  */
 public class Person {
-    private String firstName;
-    private String lastName;
+    String firstName;
+    String lastName;
+    Address address;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.address = address;
     }
 
     public String getFirstName() {
@@ -37,6 +39,19 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" + "firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + '}';
     }
     
     

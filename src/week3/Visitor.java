@@ -18,8 +18,8 @@ import java.util.Date;
 public class Visitor extends Person {
     private Date visitDate;
     
-    public Visitor(Date visitDate, String firstName, String lastName){
-        super(firstName, lastName);
+    public Visitor(Date visitDate, String firstName, String lastName, Address address){
+        super(firstName, lastName, address);
         this.visitDate = visitDate;
     }
 
@@ -29,6 +29,11 @@ public class Visitor extends Person {
 
     public void setVisitDate(Date visitDate) {
         this.visitDate = visitDate;
+    }
+
+    @Override
+    public String toString() {
+        return visitDate + " " + firstName + " " + lastName + " " + address;
     }
     
     

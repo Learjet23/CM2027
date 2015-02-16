@@ -16,8 +16,8 @@ package week3;
 public class Customer extends Person {
     private int customerID;
 
-    public Customer(int customerID, String firstName, String lastName) {
-        super(firstName, lastName);
+    public Customer(int customerID, String firstName, String lastName, Address address) {
+        super(firstName, lastName, address);
         
         this.customerID = customerID;
     }
@@ -28,6 +28,11 @@ public class Customer extends Person {
 
     public void setCustomerID(int customerID) {
         this.customerID = customerID;
+    }
+
+    @Override
+    public String toString() {
+        return customerID + " " + firstName + " " + lastName + " " + address;
     }
     
     

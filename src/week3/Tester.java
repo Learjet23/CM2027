@@ -25,9 +25,12 @@ public class Tester {
     public static void main(String[] args) {
         Date date = new Date();
         
-        Customer customer = new Customer(200, "Julian", "Bass");
+        Address addr1 = new Address("j.m.bass@rgu.ac.uk");
+        Address addr2 = new Address("m.zarb@rgu.ac.uk");
         
-        Visitor visitor = new Visitor(date, "Mark", "Zarb");
+        Customer customer = new Customer(200, "Julian", "Bass", addr1);
+        System.out.println(customer);
+        Visitor visitor = new Visitor(date, "Mark", "Zarb", addr2);
         System.out.println(visitor);
     }
     
